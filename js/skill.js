@@ -4,63 +4,63 @@
 function skillCtrl ($scope) {
     $scope.skills = [
         {
-            name: 'Java Core / GoF / Data Structures ',
+            name: 'Technic knowledge and skills in Core Java & OOP ',
             experience: '',
             bar: '6',
             barColor: '1'
         },
 
         {
-            name: 'Spring DI / AOP ',
+            name: 'Knowledge in JEE with Servlets, JSP, JPA, Hibernate, Spring IoC/Spring Boot/MVC ',
             experience: '',
             bar: '4',
             barColor: '2'
         },
 
         {
-            name: 'SQL / JDBC / Spring Data / JPA',
+            name: 'Experience in using HTTP, REST, JSON',
             experience: '',
             bar: '6',
             barColor: '1'
         },
 
         {
-            name: 'Hibernate ORM',
+            name: 'Familiar with Symmetric/Assymetric Encoding/Decoding, SHA, MD, RSA, DSS.',
             experience: '',
             bar: '4',
             barColor: '2'
         },
 
         {
-            name: 'TDD / JUnit / Mockito',
+            name: 'Experience in SpringTest / JUnit , familiar with Mockito',
             experience: 'Believe in TDD',
             bar: '5',
             barColor: '1'
         },
 
         {
-            name: 'Servlets / JSP ',
+            name: 'Familiar with MySQL RDBMS, ANSI SQL ',
             experience: '',
             bar: '6',
             barColor: '2'
         },
 
         {
-            name: 'REST / HTTP ',
+            name: 'Knowledge in developing frontend using HTML, CSS ',
             experience: '',
             bar: '5',
             barColor: '1'
         },
 
         {
-            name: 'Angular',
+            name: 'Experience in web applications server Apache Tomcat',
             experience: '',
             bar: '5',
             barColor: '2'
         },
 
         {
-            name: 'SDLC / KISS / DRY / SOLID',
+            name: 'Familiar with essentials GoF design patterns, SOLID principles and GRASP',
             experience: '',
             bar: '5',
             barColor: '1'
@@ -68,7 +68,7 @@ function skillCtrl ($scope) {
 
         {
             name: 'Tools',
-            experience: 'Gradle / Git / Flyway / Docker / Agile',
+            experience: 'Experience in developing automated process for builds and deployments using Maven and Gradle',
             bar: '6',
             barColor: '2'
         }
