@@ -4,7 +4,7 @@
 function experienceCtrl ($scope) {
     $scope.experiences = [
         {
-            dateRange: 'Feb 2019 - today',
+            dateRange: 'Apr 2019 - today',
             position: 'Ready for new oportunities',
             state: '',
             role: 'Focused on microservice stack: Java - SpringBoot - MVC – Test - REST - AWS S3 - Docker.',
