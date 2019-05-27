@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html ng-app lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Yaroslav Hamuha</title>
+    <meta name="description" content="Yaroslav Hamuha JavaEE developer">
+    <meta name="keywords" content="Java Programmer JavaEE Developer Resume My skills  My experience My activities">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,
+                700,700italic,900,900italic'
+                rel='stylesheet' type='text/css'>
+    <!-- Java Sript -->
+    <script src="js/angular.js"></script>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <!-- Controllers/models/data for angular mvc-->
+    <script src="js/skill.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/activity.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- My picture on the right -->
+    <div class="mypicture"></div>
+
+    <header>
+
+        <!-- Audio -->
+        <audio class="background_audio" src="../audio/Monday.mp3" autoplay loop></audio>
+
+        <img class="mesmall" src="img/mesmall.png" alt="">
+        <h1 class="myname">Yaroslav Hamuha
+            <span>java developer</span>
+        </h1>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- Menu button for mobile devices -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a class="active" href="about">About</a></li>
+                        <li><a href="skills">Skills</a></li>
+                        <li><a href="work">Experience</a></li>
+                        <li><a href="activity">Activity</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <div class="wrap">
+
+        <!-- About -->
+        <div class="content about active">
+            <h4>
+	            <img src="../img/java.png" height="40px" width="40px">
+                <span> since 2014</span>
+            </h4>
+            <h1><span>
+                ..self motivated, technically sophisticated and passionate developer of software solution
+                utilizing object-oriented programming languages.
+                </span>
+            </h1>
+
+        </div>
+
+        <!-- Skills -->
+        <div class="content skills">
+
+            <h2 class="title"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>My skills</h2>
+            <p class="subtitle">“Every artist was first an amateur.”
+                ― Ralph Waldo Emerson</p>
+
+            <div ng-controller="skillCtrl">
+                <div ng-repeat="skill in skills">
+                <ul >
+                    <li><span class="bigger"><b>{{skill.name}}</b></span></li>
+                    <li><span class="bigger2">{{skill.experience}}</span></li>
+                    <li class="progress">
+                        <span class="progress-bar bar-{{skill.bar}} bar-color-{{skill.barColor}}" role="progressbar"
+                              aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span>
+                    </li>
+                </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="content work">
+            <h2 class="title"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>Experience</h2>
+            <p class="subtitle">“Turn your wounds into wisdom.”
+                ― Oprah Winfrey </p>
+
+            <div ng-controller="experienceCtrl">
+                <div ng-repeat="experience in experiences">
+                    <ul>
+                        <li><span class="smaller"><span class="time glyphicon glyphicon-time" aria-hidden="true"></span>{{experience.dateRange}}</span></li>
+                        <li><span class="bigger">{{experience.position}}</span></li>
+                        <!--<li><span class="bigger"><b>{{experience.state}}</b></span></li>-->
+                        <li><span class="smaller"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span><i>{{experience.role}}</i></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity -->
+        <div class="content activity">
+            <h2 class="title"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>Activity informations</h2>
+            <p class="subtitle">“Happiness is a state of activity.”
+                - Aristotle</p>
+                <div ng-controller="activityCtrl">
+                    <div ng-repeat="activity in activities">
+                        <ul>
+                            <li><span class="smaller"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>{{activity.info}}</span></li>
+                            <li><span class="bigger"><a href="{{activity.href}}" target="_blank">{{activity.name}}</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="content contact">
+            <h2 class="title"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Contact informations</h2>
+            <p class="subtitle"></p>
+            <ul>
+                <li><span class="smaller"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>I'm ready to share my knowledge with you.
+                    Touch me and let's start together.</span></li>
+            </ul>
+
+            <form method="post" name="contact_form" action="contact-form-handler.php">
+                <div class="field">
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="field">
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+
+                <div class="field">
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="field">
+                    <button type="submit" value="Submit" class="btn btn-1 btn-1c send">
+                        Submit
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+        <footer>
+            <ul class="social">
+                <li>Get social</li>
+                <li><a href="https://www.facebook.com/yaroslav.g.hamuha" target="_blank"><img src="img/facebook.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/yaroslav-hamuha/" target="_blank"><img src="img/in.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Java Script -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/audioBackgroundShaker.js"></script>
+
+</div>
+</body>
+</html>
