@@ -16,7 +16,7 @@ function activityCtrl ($scope) {
         {
             info: 'Hobby',
             name: "@music",
-            href: 'http://neutralpoint.org.ua/neutral_point_interview_2011_en.pdf'
+            href: 'https://yhamuha.github.io/neutral_point_interview_en.pdf'
         },
         {
             info: 'Relax',
