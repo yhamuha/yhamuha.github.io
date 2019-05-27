@@ -67,8 +67,8 @@ function skillCtrl ($scope) {
         },
 
         {
-            name: 'Tools',
-            experience: 'Experience in developing automated process for builds and deployments using Maven and Gradle',
+            name: 'Experience in developing automated process for builds and deployments using Maven and Gradle, Docker',
+            experience: '',
             bar: '6',
             barColor: '2'
         }
