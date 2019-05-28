@@ -33,7 +33,7 @@ function skillCtrl ($scope) {
 
         {
             name: 'Experience in SpringTest / JUnit , familiar with Mockito',
-            experience: 'Believe in TDD',
+            experience: '',
             bar: '5',
             barColor: '1'
         },
