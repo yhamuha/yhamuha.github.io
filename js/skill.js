@@ -11,7 +11,7 @@ function skillCtrl ($scope) {
         },
 
         {
-            name: 'Knowledge in JEE with Servlets, JSP, JPA, Hibernate, Spring IoC/Spring Boot/MVC ',
+            name: 'Knowledge in JEE with Servlets, JSP, JDBC, JPA, Hibernate, Spring IoC/Spring Boot/MVC ',
             experience: '',
             bar: '4',
             barColor: '2'
