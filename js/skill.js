@@ -25,7 +25,7 @@ function skillCtrl ($scope) {
         },
 
         {
-            name: 'Familiar with Symmetric/Assymetric Encoding/Decoding, SHA, MD, RSA, DSS.',
+            name: 'One-time experience with Symmetric/Assymetric Encoding/Decoding, SHA, MD, RSA, DSS.',
             experience: '',
             bar: '4',
             barColor: '2'
