@@ -39,16 +39,16 @@ function skillCtrl ($scope) {
         },
 
         {
-            name: 'Familiar with MySQL RDBMS, ANSI SQL ',
+            name: 'Familiar with RDBMS MySQL, Oracle PL-SQL and NoSQL MongoDB  ',
             experience: '',
             bar: '6',
             barColor: '2'
         },
 
         {
-            name: 'Knowledge in developing frontend using HTML, CSS ',
+            name: 'Familiar in front-end developing: JavaScript ECMA5, HTML5, CSS3 ',
             experience: '',
-            bar: '5',
+            bar: '4',
             barColor: '1'
         },
 
