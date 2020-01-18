@@ -4,6 +4,12 @@
 function skillCtrl ($scope) {
     $scope.skills = [
         {
+            name: 'AWS Certified Solutions Architect Associate: IAM, S3, EC2, DB, Route53, VPC, HA, SQS, SNS, Lambda',
+            experience: '',
+            bar: '6',
+            barColor: '0'
+        },
+        {
             name: 'Technic knowledge and skills in Core Java & OOP ',
             experience: '',
             bar: '6',
