@@ -19,7 +19,7 @@ function activityCtrl ($scope) {
             href: 'https://yhamuha.github.io/neutral_point_interview_en.pdf'
         },
         {
-            info: 'Sometime',
+            info: 'Sometimes',
             name: '@playing chess ',
             href: 'https://account.chessbase.com/en'
         }
