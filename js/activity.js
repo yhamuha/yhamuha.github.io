@@ -5,22 +5,22 @@ function activityCtrl ($scope) {
     $scope.activities = [
         {
             info: 'Love',
-            name: '@running',
+            name: '@long-distance running',
             href: 'https://runkeeper.com/user/neutralpoint/profile'
         },
         {
             info: 'Like',
-            name: '@ducation',
+            name: '@improving skills',
             href: 'http://google.com/'
         },
         {
             info: 'Hobby',
-            name: "@music",
+            name: "@electronic music",
             href: 'https://yhamuha.github.io/neutral_point_interview_en.pdf'
         },
         {
             info: 'Sometime',
-            name: '@hess ',
+            name: '@playing chess ',
             href: 'https://account.chessbase.com/en'
         }
     ];
