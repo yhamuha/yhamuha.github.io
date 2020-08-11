@@ -4,7 +4,7 @@
 function skillCtrl ($scope) {
     $scope.skills = [
         {
-            name: 'AWS Certified Solutions Architect Associate: IAM, S3, EC2, DB, Route53, VPC, HA, SQS, SNS, Lambda',
+            name: '2020 AWS Solutions Architect Associate',
             experience: '',
             bar: '6',
             barColor: '2'
