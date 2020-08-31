@@ -52,7 +52,7 @@ function skillCtrl ($scope) {
         },
 
         {
-            name: 'Familiar in front-end developing: JavaScript ECMA5, HTML5, CSS3 ',
+            name: 'Familiar in front-end developing: JavaScript ECMA6, HTML5, CSS3 ',
             experience: '',
             bar: '4',
             barColor: '1'
