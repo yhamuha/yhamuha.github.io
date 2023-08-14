@@ -1,4 +1,4 @@
-/**
+#/**
  * Created by Yaroslav Hamuha
  */
 function experienceCtrl ($scope) {
@@ -7,14 +7,14 @@ function experienceCtrl ($scope) {
             dateRange: 'Dec 2021 - current time',
             position: 'Software Engineer II -> AMEX',
             state: '',
-            role: 'Keen on Java, JS, Spring Boot/MVC, REST , RDBMS, MongoDB, Docker, AWS.',
+            role: 'java, vert.x, security, oracle pl/sql, devops',
             href: ''
         },
         {
             dateRange: 'Jan 2021 - Sep 2021',
             position: 'Network Software Engineer -> MICROSOFT',
             state: '',
-            role: 'Keen on Java, JS, Spring Boot/MVC, REST , RDBMS, MongoDB, Docker, AWS.',
+            role: 'Azure IoT, Azure DevOps, k8s, c#, docker, python, power shell, bash',
             href: ''
         },
         {
