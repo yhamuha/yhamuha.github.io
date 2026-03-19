@@ -35,8 +35,23 @@
     <header>
 
         <!-- Audio -->
-        <audio class="background_audio" src="../audio/Monday.mp3" autoplay loop></audio>
+        <audio id="bg-music" loop>
+           <source src="../audio/Monday.mp3" type="audio/mpeg">
+		</audio>
 
+		<button onclick="playMusic()" class="music-btn">
+		  ▶ Play Music
+		</button>
+		
+		<script>
+		function playMusic() {
+		  const audio = document.getElementById("bg-music");
+		  audio.play().catch(error => {
+		    console.log("Playback blocked:", error);
+		  });
+		}
+		</script>
+		
         <img class="mesmall" src="img/mesmall.png" alt="">
         <h1 class="myname">Yaroslav Hamuha
             <span>java developer</span>
